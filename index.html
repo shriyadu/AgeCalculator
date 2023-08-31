@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Age calculator</title>
+  <link rel="stylesheet" href="index.css">  
+  <script src="app.js"></script> 
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="base">
+                <div class="enter"><h4>Age Calculator</h4></div>
+                <div class="heading">Enter Son's Age</div>
+                <div class="block">
+                    <p class="title">Date</p>
+                    <input type="text" name="date" id="date1" placeholder="dd" required="required" minlength="1" maxlength="2" required="required" pattern="[0-3]?[0-9]" title="Enter a valid day (1-31)"/>
+                </div>
+                <div class="block">
+                    <p class="title">Month</p>
+                    <input type="text" name="month" id="month1" placeholder="mm" required="required" minlength="1" maxlength="2" required="required" pattern="0[1-9]|1[0-2]" title="Enter a valid month (01-12)"/>
+                </div>
+                <div class="block">
+                    <p class="title">Year</p>
+                    <input type="text" name="year" id="year1" placeholder="yyyy" required="required" minlength="4" maxlength="4" required="required" pattern="[0-9]{4}" title="Enter a valid year (4 digits)" />
+                </div>
+            </div>
+
+            <div class="base">
+                <br>
+                <div class="heading">Enter Mother's Age</div>
+                <div class="block">
+                    <p class="title">Date</p>
+                    <input type="text" name="date" id="date2" placeholder="dd" required="required" minlength="1" maxlength="2"/>
+                </div>
+                <div class="block">
+                    <p class="title">Month</p>
+                    <input type="text" name="month" id="month2" placeholder="mm" required="required" minlength="1" maxlength="2"/>
+                </div>
+                <div class="block">
+                    <p class="title">Year</p>
+                    <input type="text" name="year" id="year2" placeholder="yyyy" required="required" minlength="4" maxlength="4" />
+                </div>
+            </div>
+              
+            <div class="base">
+                <div class="enter">
+                    <input type="button" name="submit" value="Calculate Age" onclick="calculateAges()" />
+                </div>
+            </div>
+            <br>
+            <div id="age1" class="input"></div>
+            <div id="age2" class="input"></div>
+            <div id="ageDifference" class="input"></div>
+        </form>
+    </div>
+    
+</body>
+</html>
